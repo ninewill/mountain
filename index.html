@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-gltf</title>
+    <link rel="stylesheet" href="common/css/style.css">
+</head>
+
+<body>
+    <div class="wraper">
+        <header id="top-bar">
+            <a href="javascript:;" id="home-link">脊梁山脈旅遊年</a>
+            <div id="toggle" class="menu__mobile">
+                <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                    <path
+                        d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z" />
+                </svg>
+            </div>
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="javascript:;">五大山脈</a></li>
+                        <li><a href="javascript:;">經典路線</a></li>
+                        <li><a href="javascript:;">經典遊程</a></li>
+                        <li><a href="javascript:;">美景寫真</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="map-wrap">
+            <div id="map"></div>
+        </section>
+        <section id="model">
+            <figure class="app-wraper">
+                <canvas class="app"></canvas>
+            </figure>
+            <h1>mountain</h1>
+        </section>
+        <section id="intro">
+            <div class="container">
+                <p>The
+                    <strong>Lorem ipsum dolor sit amet </strong>
+                    consectetur adipisicing elit. Veritatis quisquam ducimus suscipit
+                    <strong>explicabo deserunt quam, odio </strong>
+                    It’s quite good.
+                </p>
+            </div>
+        </section>
+        <footer>
+            <a href="javascript:;" id="home-link">Twaian</a>
+            <div class="footer-info">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </footer>
+    </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD0CREGIE4UU2lRxCEHBJnf060l2iikoE&language=zh-TW&region=TW&callback=initMap&libraries=geometry,visualization&v=weekly"
+        defer></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

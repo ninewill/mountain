@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  background: url("https://wallpaperaccess.com/full/1155041.jpg");
+}
+
+.wraper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.wraper .app,
+.wraper canvas {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.wraper .app {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .wraper .app {
+    width: 100%;
+  }
+}
+
+.wraper .block {
+  width: 30%;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .wraper .block {
+    width: 100%;
+    height: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
