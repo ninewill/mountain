@@ -51,7 +51,7 @@ function init() {
 
   //載入模型
   let loader = new THREE.GLTFLoader();
-  loader.load("../3d/mountain/scene.gltf", function (gltf) {
+  loader.load("scene.gltf", function (gltf) {
     scene.add(gltf.scene);
     mountain = gltf.scene.children[0];
 
