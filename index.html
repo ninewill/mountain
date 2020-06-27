@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3d-gltf</title>
-    <link rel="stylesheet" href="common/css/style.css">
+    <title>Nepal-D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wraper">
         <header id="top-bar">
-            <a href="javascript:;" id="home-link">脊梁山脈旅遊年</a>
+            <a href="javascript:;" id="home-link">Gaurishankar</a>
             <div id="toggle" class="menu__mobile">
                 <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
                     <path
@@ -21,52 +22,86 @@
             <div class="overlay" id="overlay">
                 <nav class="overlay-menu">
                     <ul>
-                        <li><a href="javascript:;">五大山脈</a></li>
-                        <li><a href="javascript:;">經典路線</a></li>
-                        <li><a href="javascript:;">經典遊程</a></li>
-                        <li><a href="javascript:;">美景寫真</a></li>
+                        <li><a href="javascript:;">Location</a></li>
+                        <li><a href="javascript:;">Features</a></li>
+                        <li><a href="javascript:;">History</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section id="map-wrap">
-            <div id="map"></div>
-        </section>
         <section id="model">
             <figure class="app-wraper">
                 <canvas class="app"></canvas>
             </figure>
-            <h1>mountain</h1>
+            <h1>Nepal-D</h1>
         </section>
         <section id="intro">
             <div class="container">
-                <p>The
-                    <strong>Lorem ipsum dolor sit amet </strong>
-                    consectetur adipisicing elit. Veritatis quisquam ducimus suscipit
-                    <strong>explicabo deserunt quam, odio </strong>
-                    It’s quite good.
+                <p>
+                    <strong> Nepal is a landlocked country</strong>, which is located in southern <strong>Asia</strong>. It is mainly located in the Himalayas but also includes the portions of <strong>Indo Gangetic Plain</strong>. 
                 </p>
+            </div>
+        </section>
+        <section id="cov-loc" class="chevron">
+            <div id="location">
+                <h2>Location</h2>
+                <div class="container">
+                    <div class="data-img">
+                        <img src="img/cover-nepal-mountains.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Gaurishankar lies near the western edge of the Rolwaling Himal, about 100 kilometres (62 mi) northeast of Kathmandu. (It is almost directly between Kathmandu and Mount Everest, and is visible from Kathmandu.) </p>
+                        <p>To the west of the peak lies the valley of the Bhote Kosi, the western boundary of the Rolwaling Himal. To the north lies the Menlung Chu, which separates it from its sister peak Melungtse. To the south lies the Rolwaling Chu, which leads up to the Tesi Lapcha pass, giving access to the Khumbu region.[5] It is in Dolakha District.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cov-fea" class="chevron">
+            <div id="location">
+                <h2>Features</h2>
+                <div class="container2">
+                    <div class="info2">
+                        <p>Gaurishankar lies near the western edge of the Rolwaling Himal, about 100 kilometres (62 mi) northeast of Kathmandu. (It is almost directly between Kathmandu and Mount Everest, and is visible from Kathmandu.) </p>
+                        <p>To the west of the peak lies the valley of the Bhote Kosi, the western boundary of the Rolwaling Himal. To the north lies the Menlung Chu, which separates it from its sister peak Melungtse. To the south lies the Rolwaling Chu, which leads up to the Tesi Lapcha pass, giving access to the Khumbu region.[5] It is in Dolakha District.</p>
+                    </div>
+                    <div class="data-img2">
+                        <div class="point"></div>
+                        <img src="img/2560px-Nepal_rel_location_map.svg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cov-his" class="chevron">
+            <div id="location">
+                <h2>History</h2>
+                <div class="container2">
+                    <div class="info2">
+                        <p>The first attempts to climb Gauri Sankar were made in the 1950s and 1960s but weather, avalanches and difficult ice faces defeated all parties.[8] From 1965 until 1979, the mountain was officially closed for climbing. </p>
+                    </div>
+                </div>
             </div>
         </section>
         <footer>
             <a href="javascript:;" id="home-link">Twaian</a>
             <div class="footer-info">
-                Lorem ipsum dolor sit amet.
+                Hsu Yu Wei © 2020
             </div>
         </footer>
     </div>
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD0CREGIE4UU2lRxCEHBJnf060l2iikoE&language=zh-TW&region=TW&callback=initMap&libraries=geometry,visualization&v=weekly"
-        defer></script>
     <script src="js/three.min.js"></script>
     <script src="js/GLTFLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
-    <script src="js/map.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+        $('#toggle').click(function () {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
+});
+    </script>
 </body>
 
 </html>
